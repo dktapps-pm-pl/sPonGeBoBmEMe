@@ -15,7 +15,7 @@ ClAss mAiN eXtEnDs pLuGiNbAsE iMPlEmENtS liSTeNeR {
 	pUbLIc FuNcTIOn OnpLaYErcHAt(pLAyErcHaTeVeNT $eV){
 		$mEssAgE = StR_SPlIT($eV->gEtmESsAgE());
 		foReAcH($mEssAgE aS $K => $ChAR){
-			$char = StRtOLoWEr($ChAR);
+			$ChAR = StRtOLoWEr($ChAR);
 			if(mT_RaND(0, 1) === 1){
 				$ChAR = StRToUpPeR($ChAR);
 			}
