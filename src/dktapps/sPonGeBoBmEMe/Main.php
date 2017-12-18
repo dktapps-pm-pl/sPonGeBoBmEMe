@@ -1,28 +1,28 @@
-<?php
+<?pHp
 
-namespace dktapps\sPonGeBoBmEMe;
+nAmESpAcE dKtAPps\sPonGeBoBmEMe;
 
-use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerChatEvent;
-use pocketmine\plugin\PluginBase;
+UsE pOcKeTMiNe\EvEnT\liSTeNeR;
+uSe PocKeTmiNe\eVeNt\pLAyEr\pLAyErcHaTeVeNT;
+uSE POckEtmInE\PlUgiN\pLuGiNbAsE;
 
-class Main extends PluginBase implements Listener{
+ClAss mAiN eXtEnDs pLuGiNbAsE iMPlEmENtS liSTeNeR {
 
-	public function onEnable(){
-		$this->getServer()->getPluginManager()->registerEvents($this, $this);
+	pUbLIc FuNcTIOn ONeNaBLe(){
+		$this->gEtSeRVeR()->gEtpLuGInmANaGeR()->ReGIsTeReVeNts($this, $this);
 	}
 
-	public function onPlayerChat(PlayerChatEvent $ev){
-		$message = str_split($ev->getMessage());
-		foreach($message as $k => $char){
-			$char = strtolower($char);
-			if(mt_rand(0, 1) === 1){
-				$char = strtoupper($char);
+	pUbLIc FuNcTIOn OnpLaYErcHAt(pLAyErcHaTeVeNT $eV){
+		$mEssAgE = StR_SPlIT($eV->gEtmESsAgE());
+		foReAcH($mEssAgE aS $K => $ChAR){
+			$char = StRtOLoWEr($ChAR);
+			if(mT_RaND(0, 1) === 1){
+				$ChAR = StRToUpPeR($ChAR);
 			}
 
-			$message[$k] = $char;
+			$mEssAgE[$K] = $ChAR;
 		}
 
-		$ev->setMessage(implode('', $message));
+		$eV->sEtmESsAgE(ImPLoDe('', $mEssAgE));
 	}
 }
