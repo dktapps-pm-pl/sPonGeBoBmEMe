@@ -2,9 +2,9 @@
 
 nAmESpAcE dKtAPps\sPonGeBoBmEMe;
 
-UsE pOcKeTMiNe\EvEnT\liSTeNeR;
-uSe PocKeTmiNe\eVeNt\pLAyEr\pLAyErcHaTeVeNT;
-uSE POckEtmInE\PlUgiN\pLuGiNbAsE;
+UsE pocketmine\event\Listener;
+uSe pocketmine\event\player\PlayerChatEvent;
+uSE pocketmine\plugin\PluginBase;
 
 ClAss mAiN eXtEnDs pLuGiNbAsE iMPlEmENtS liSTeNeR {
 
