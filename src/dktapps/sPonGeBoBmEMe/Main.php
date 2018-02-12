@@ -13,16 +13,15 @@ class Main extends PluginBase implements Listener{
 	}
 
 	public function onPlayerChat(PlayerChatEvent $ev){
-		$message = str_split($ev->getMessage());
-		foreach($message as $k => $char){
-			$char = strtolower($char);
+		$message = $ev->getMessage();
+		for($k = 0, $kMax = strlen($message); $k < $kMax; ++$k){
+			$char = strtolower($message[$k]);
 			if(mt_rand(0, 1) === 1){
 				$char = strtoupper($char);
 			}
-
 			$message[$k] = $char;
 		}
 
-		$ev->setMessage(implode('', $message));
+		$ev->setMessage($message);
 	}
 }
