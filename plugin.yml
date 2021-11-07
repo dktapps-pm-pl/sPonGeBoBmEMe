@@ -1,7 +1,7 @@
 name: sPonGeBoBmEMe
 main: dktapps\sPonGeBoBmEMe\Main
 version: 1.0.2
-api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10, 3.0.0-ALPHA11, 3.0.0-ALPHA12]
+api: [3.25.0]
 load: POSTWORLD
 author: dktapps
 description: a pLugIn fOr pOckETMiNe-mP tO maKe aLL ChaT mEssAgeS lOoK liKe thIs
