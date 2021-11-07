@@ -8,11 +8,11 @@ use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase implements Listener{
 
-	public function onEnable(){
+	public function onEnable() : void{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 
-	public function onPlayerChat(PlayerChatEvent $ev){
+	public function onPlayerChat(PlayerChatEvent $ev) : void{
 		$message = $ev->getMessage();
 		for($k = 0, $kMax = strlen($message); $k < $kMax; ++$k){
 			$char = strtolower($message[$k]);
